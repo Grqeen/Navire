@@ -16,19 +16,18 @@ namespace TP1Navire
         private string libelleFret;
         private int qteFretMaxi;
 
-        public Navire(string imo, string nom)
+        public Navire(string imo, string nom, string libelleFret, int qteFretMaxi)
         {
             this.imo = imo;
             this.nom = nom;
-            this.libelleFret = "Indéfini";
-            this.qteFretMaxi = 0;
-        }
-
-        public Navire(string imo, string nom, string libelleFret, int qteFretMaxi):this (imo, nom)
-        {            
             this.libelleFret = libelleFret;
             this.qteFretMaxi = qteFretMaxi;
         }
+
+        public Navire(string imo, string nom):this (imo, nom, "Indéfini", 0) { }
+                   
+            
+        
 
         public string Imo { get => imo; set => imo = value; }
         public string Nom { get => nom; set => nom = value; }

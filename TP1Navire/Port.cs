@@ -15,11 +15,11 @@ namespace TP1Navire
         private int nbNaviresMax;
         private List<Navire> navires;
 
-        public Port(string name, List<Navire> navires)
+        public Port(string name)
         {
             this.name = name;
             this.nbNaviresMax = 5;
-            this.navires = navires;
+            this.navires = new List<Navire>();
         }
 
         public void EnregistrerArrivee(Navire navire)

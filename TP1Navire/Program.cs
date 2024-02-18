@@ -55,7 +55,7 @@ namespace TP1Navire
 
         public static void TesterEnregistrerArrivee()
         {
-            Port port = new Port("Toulon", new List<Navire>());
+            Port port = new Port("Toulon");
             port.EnregistrerArrivee(new Navire("IMO9839272", "MSC Isabella","Porte-conteneur", 5));
             port.EnregistrerArrivee(new Navire("IMO9839273", "Bateau 1", "Type bateau 1", 6));
             port.EnregistrerArrivee(new Navire("IMO9839274", "Bateau 2 ", "Type bateau 2", 7));
@@ -68,17 +68,17 @@ namespace TP1Navire
 
         public static void TesterRecupPosition()
         {
-            (new Port("Toulon", new List<Navire>())).TesterRecupPosition();
+            (new Port("Toulon")).TesterRecupPosition();
         }
 
         public static void TesterRecupPositionV2()
         {
-            (new Port("Toulon", new List<Navire>())).TesterRecupPositionV2();
+            (new Port("Toulon")).TesterRecupPositionV2();
         }
 
         public static void TesterEnregistrerDepart()
         {
-            Port port = new Port("Toulon", new List<Navire>());
+            Port port = new Port("Toulon");
             port.EnregistrerArrivee(new Navire("IMO9427639", "Copper Spirit", "Hydrocarbures", 156827));
             port.EnregistrerArrivee(new Navire("IMO9839272", "MSC Isabella", "Porte-conteneurs", 197500));
             port.EnregistrerArrivee(new Navire("IMO8715871", "MSC PILAR"));
@@ -91,7 +91,7 @@ namespace TP1Navire
 
         public static void TesterEstPresent()
         {
-            Port port = new Port("Toulon", new List<Navire>());
+            Port port = new Port("Toulon");
             port.EnregistrerArrivee(new Navire("IMO9427639", "Copper Spirit", "Hydrocarbures", 156827));
             port.EnregistrerArrivee(new Navire("IMO9839272", "MSC Isabella", "Porte-conteneurs", 197500));
             port.EnregistrerArrivee(new Navire("IMO8715871", "MSC PILAR"));
