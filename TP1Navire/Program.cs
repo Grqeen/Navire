@@ -17,9 +17,9 @@ namespace TP1Navire
                 //TesterInstanciations();
                 //TesterEnregistrerArrivee();
                 //TesterRecupPosition();
-                //TesterRecupPositionV2();
+                TesterRecupPositionV2();
                 //TesterEnregistrerDepart();
-                TesterEstPresent();
+                //TesterEstPresent();
             }
             catch (Exception ex)
             {
